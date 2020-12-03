@@ -73,6 +73,7 @@ public class Sqlite {
             statement.setString(1, param);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
+                //FIXME unchecked cast
                 T object = (T) resultSet.getObject(1);
                 result.add(object);
             }
