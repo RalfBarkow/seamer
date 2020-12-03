@@ -1,3 +1,6 @@
 .idea
 seamer.iml
 target
+.settings
+.classpath
+.project
